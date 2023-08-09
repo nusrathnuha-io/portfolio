@@ -225,18 +225,14 @@ img{
   width: 295px;
 }
 
-/*BUTTONS*/
-.button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
+/* Reset some default button styles */
+button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-.button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
-}
+
+
 
 /* ===== ABOUT =====*/
 .about__container{
@@ -483,3 +479,55 @@ img {
       flex: 0 0 100%;
       width: 100%;
     }
+
+    .gender-title{
+      color:black;
+    
+      
+  }
+  
+  .gender-category{
+      margin: 15px 0;
+      color: black;
+  }
+  
+  .gender-category label{
+      padding: 0 20px 0 5px;
+  }
+  
+  .gender-category label,
+  .gender-category input,
+  .form-submit-btn input{
+      cursor: pointer;
+  }
+  @media(max-width: 600px){
+    .gender-category{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+}
+.form-submit-btn input{
+  cursor: pointer;
+}
+
+.form-submit-btn{
+  margin-top: 40px;
+}
+
+.form-submit-btn input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border:none;
+  border-radius: 3px;
+  color: rgb(209, 209, 209);
+  background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover{
+  background: rgba(56, 204, 93, 0.7);
+  color: rgb(255, 255, 255);
+}
