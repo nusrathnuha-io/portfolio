@@ -23,9 +23,10 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#register" class="nav__link"> Register</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="register.html" class="nav__link"> <button>Register</button></a></li>
+                       
                     </ul>
                 </div>
 
@@ -162,60 +163,137 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
             
-                <div class="slider">
-                  <div class="slider__container">
-                    <div class="slider__item">
-                      <img src="img/1.jpg" alt=""width="100%" height="100%">
-                    </div>
-                    <div class="slider__item">
-                      <img src="img/2.jpg" alt=""width="100%" height="100%">
-                    </div>
-                    <div class="slider__item">
-                      <img src="img/3.jpg" alt=""width="100%" height="100%">
-                    </div>
-                    <div class="slider__item">
-                      <img src="img/4.jpg" alt=""width="100%" height="100%">
-                      </div>
-                    <div class="slider__item">
-                      <img src="img/5.jpg" alt=""width="100%" height="100%">
-                    </div>
-                    <div class="slider__item">
-                      <img src="img/6.jpg" alt=""width="100%" height="100%">
-                    </div>
-                  </div>
-                  <button class="slider__prev">&#10094;</button>
-                  <button class="slider__next">&#10095;</button>
-                </div>
-                
-              </section>
-            <!--Register-->
            
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title" data-aos="fade-down">Contact</h2>
-            
-                <div class="contact__container bd-grid">
-                    <form method="post" action="form.php" class="contact__form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your Name" name="name" class="contact__input" data-aos="fade-right">
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your Email" name="email" class="contact__input" data-aos="fade-right">
-                        
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" data-aos="fade-right"></textarea>
-                        
-                        <button type="submit" class="contact__button button" data-aos="fade-right">Enter</button>
-                    </form>
-               </div>
            
+         <!----==Register==-->
+            <section class="contact section" id="register">
+                <h2 class="section-title" data-aos="fade-down">Register</h2>
+                <p style="text-align: center;">Helping is often described as connecting private troubles with public issues. The helper’s training and perspective recognizes the individual but is forced to look beyond the individual and consider the larger societal issue. The family caring for an older adult needs help with coping as a family, but why does society not provide better resources to help such families? What can we do as neighbors and community members to help our aging members? Because helpers feel this sense of connectedness, they are quite adept at seeing people’s strengths and identifying people as resources for each other and society at large. For example, where someone sees corruption, a helper may see differences in values and opinions; where someone would like to condemn a helper would be more likely to educate; and where someone would fight, a helper might mediate.</p>
+               <br>
+               <br>
+                <p style="text-align: center;"> <b>Those who are willing to join with us</b></p>
+                <br>
+           
+                <div class="contact__container bd-grid">
+                   <form method="post" action="user.php" class="contact__form">
+                
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="contact__input" data-aos="fade-down"required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" class="contact__input" data-aos="fade-down"required>
+                
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="contact__input" data-aos="fade-down"required>
+                
+    
+        <div>
+            <span data-aos="fade-down">Gender</span>
+             <br>
+            <label>
+              <input type="radio" name="gender" value="male" > Male
+            </label>
+        
+            <label>
+              <input type="radio" name="gender" value="female"> Female
+            </label>
+        
+            <label>
+              <input type="radio" name="gender" value="other"> Other
+            </label>
+        
+        
+        </div>
+
+        <div>
+            <span data-aos="fade-down">Please select your age:</span>
+            <br>
+            <label>
+                <input type="radio" name="age" value="15-25"> 15 - 25
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="age" value="26-40"> 26 - 40
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="age" value="41-55"> 41 - 55
+            </label>
+            <br>
+        </div>
+
+    <label for="daySelect" data-aos="fade-down" >Choose a day:</label>
+            <select id="daySelect" name="day" class="contact__input" required>
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+       
+
+    <button type="submit" class="contact__button button" data-aos="fade-right">Register</button>
+                           
+     </form>
+</div>
          </section>
+         <!--===== WORK =====-->
+         <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+        
+            <div class="slider">
+              <div class="slider__container">
+                <div class="slider__item">
+                  <img src="img/1.jpg" alt=""width="100%" height="100%">
+                </div>
+                <div class="slider__item">
+                  <img src="img/2.jpg" alt=""width="100%" height="100%">
+                </div>
+                <div class="slider__item">
+                  <img src="img/3.jpg" alt=""width="100%" height="100%">
+                </div>
+                <div class="slider__item">
+                  <img src="img/4.jpg" alt=""width="100%" height="100%">
+                  </div>
+                <div class="slider__item">
+                  <img src="img/5.jpg" alt=""width="100%" height="100%">
+                </div>
+                <div class="slider__item">
+                  <img src="img/6.jpg" alt=""width="100%" height="100%">
+                </div>
+              </div>
+              <button class="slider__prev">&#10094;</button>
+              <button class="slider__next">&#10095;</button>
+            </div>
             
+          </section>
+
+          <!--===== CONTACT =====-->
+          <section class="contact section" id="contact">
+            <h2 class="section-title" data-aos="fade-down">Contact</h2>
+        <p style="text-align: center;">
+            Please be clear, factual, and tell us the outcome you would like. Providing your name and contact details will help us to get in touch and help resolve the issue. If you provide feedback anonymously, we won’t be able to respond to you personally.
+        </p>
+            <div class="contact__container bd-grid">
+                <form method="post" action="form.php" class="contact__form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" name="name" class="contact__input" data-aos="fade-right">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" name="email" class="contact__input" data-aos="fade-right">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" data-aos="fade-right"></textarea>
+                    
+                    <button type="submit" class="contact__button button" data-aos="fade-right">Enter</button>
+                </form>
+           </div>
+       
+     </section>
         </main>
 
         <!--===== FOOTER =====-->
