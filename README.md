@@ -1,6 +1,7 @@
 # nuha
 
-url :https://nusrathnuha-io.github.io/nuha/
+url : https://nusrathnuha-io.github.io/portfolio/
+
 source : https://github.com/nusrathnuha-io/nuha
 
 
